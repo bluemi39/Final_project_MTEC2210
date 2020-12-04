@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
+    public bool bulletMove = false;
+
+    
+
     // Start is called before the first frame update
     void Start()
     {

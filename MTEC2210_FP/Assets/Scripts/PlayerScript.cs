@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    public float ForwardForce = 10f;
-
-    public Transform rb;
-
+    
     private AudioSource audioSource;
+
 
     public AudioClip [] soundClips;
     // 0 = Shooting
@@ -26,11 +24,24 @@ public class PlayerScript : MonoBehaviour
     {
         
 
-        if (Input.GetKey("w"))
+        if (Input.GetKey(KeyCode.W))
         {
-            rb.AddForce(ForwardForce * Time.deltaTime, 0, 0);
+            
+            transform.Translate(0f, 10f * Time.deltaTime, 0f);
         }
 
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.Translate(0f, -10f * Time.deltaTime, 0f);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Translate(10f * Time.deltaTime, 0f, 0f);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Translate(-10f * Time.deltaTime, 0f, 0f);
+        }
 
     }
 
@@ -70,5 +81,7 @@ public class PlayerScript : MonoBehaviour
 
         //Play sound
         audioSource.PlayOneShot(soundClips[0]);
+
+        
     }
 }
