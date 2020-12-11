@@ -7,6 +7,9 @@ public class PlayerScript : MonoBehaviour
     
     private AudioSource audioSource;
 
+    public float range = 100f;
+
+    public GameObject PlayerShooter;
 
     public AudioClip [] soundClips;
     // 0 = Shooting
@@ -82,6 +85,10 @@ public class PlayerScript : MonoBehaviour
         //Play sound
         audioSource.PlayOneShot(soundClips[0]);
 
-        
+        RaycastHit hit;
+       if (Physics.Raycast(PlayerShooter.transform.position, PlayerShooter.transform.forward, out hit))
+        {
+            Debug.Log(hit.transform.name);
+        }
     }
 }

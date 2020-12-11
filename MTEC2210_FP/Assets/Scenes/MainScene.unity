@@ -215,7 +215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254fc2711f135ac41a1a233f9d9faa5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletMove: 0
+  player: {fileID: 729208532}
+  offset: {x: 0, y: 1, z: 0}
 --- !u!1 &729208528
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +235,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &729208529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,6 +248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d28d48b34c3e12b4f9730f2f368d1a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  range: 100
+  PlayerShooter: {fileID: 729208528}
   soundClips:
   - {fileID: 8300000, guid: 1d8fc22e481b35645ba16485274f05e5, type: 3}
   - {fileID: 8300000, guid: 296dce0e1b2b98146b3eee3666066eed, type: 3}
