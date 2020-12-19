@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-    public Transform player;
-    public Vector3 offset;
+    //public Transform player;
+    //public Vector3 offset;
     
 
     // Start is called before the first frame update
@@ -17,6 +17,8 @@ public class BulletScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.position + offset;
+        //transform.position = player.position + offset;
+
+
     }
 }
