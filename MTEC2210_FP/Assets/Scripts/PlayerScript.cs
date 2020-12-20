@@ -24,19 +24,7 @@ public class PlayerScript : MonoBehaviour
     }
 
     void FixedUpdate ()
-    {
-        
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            
-            transform.Translate(0f, 10f * Time.deltaTime, 0f);
-        }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.Translate(0f, -10f * Time.deltaTime, 0f);
-        }
+    { 
         if (Input.GetKey(KeyCode.D))
         {
             transform.Translate(10f * Time.deltaTime, 0f, 0f);

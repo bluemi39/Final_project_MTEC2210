@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour {
 
 	public GameObject deathEffect;
 
+
 	public void TakeDamage (int damage)
 	{
 		health -= damage;
@@ -20,6 +21,7 @@ public class Enemy : MonoBehaviour {
 
 	void Die ()
 	{
+		ScoreScript.scoreValue += 10;
 		Instantiate(deathEffect, transform.position, Quaternion.identity);
 		Destroy(gameObject);
 	}
