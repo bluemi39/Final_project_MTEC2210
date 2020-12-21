@@ -1302,6 +1302,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5312836471260691000, guid: 29630b5e80214bc459d5a166516facdd,
+        type: 3}
+      propertyPath: speed
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312836471260691000, guid: 29630b5e80214bc459d5a166516facdd,
+        type: 3}
+      propertyPath: minBound
+      value: -5.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312836471260691000, guid: 29630b5e80214bc459d5a166516facdd,
+        type: 3}
+      propertyPath: maxBound
+      value: 5.65
+      objectReference: {fileID: 0}
     - target: {fileID: 5312836471260691001, guid: 29630b5e80214bc459d5a166516facdd,
         type: 3}
       propertyPath: m_Name
@@ -2130,6 +2145,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9015009932946787043, guid: 93745fc15d3ee364d96fdd0f15703918,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 167
+      objectReference: {fileID: 0}
     - target: {fileID: 9015009932946787044, guid: 93745fc15d3ee364d96fdd0f15703918,
         type: 3}
       propertyPath: m_Text
